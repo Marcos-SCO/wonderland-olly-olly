@@ -53,5 +53,10 @@ header {
   max-width: 30px;
   border-radius: 50%;
 
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
 }
-

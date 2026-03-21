@@ -19,13 +19,18 @@
 
             <address class="contact-info flex items-center">
                 <div class="location">
-                    <div class="ellipse-icon">I</div>
+                    <div class="ellipse-icon">
+                        <div class="icon">
+                            <?= $GLOBALS['svgLoader']->render('location_icon'); ?>
+                        </div>
+                    </div>
+
                     <p><?= __('Plano, TX', 'wonderland'); ?></p>
                 </div>
 
                 <div class="phone">
                     <a href="#" class="btn phone-button">
-                        <div class="ellipse-icon"><span class="icon">I</span></div>
+                        <div class="ellipse-icon"><span class="icon"><?= $GLOBALS['svgLoader']->render('phone_icon'); ?></span></div>
 
                         <span class="phone-info"><?= __('(508) 0000-0000', 'wonderland'); ?></span>
                     </a>

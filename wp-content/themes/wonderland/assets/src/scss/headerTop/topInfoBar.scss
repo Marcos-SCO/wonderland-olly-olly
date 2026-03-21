@@ -145,6 +145,11 @@
     .ellipse-icon {
       background-color: $greenTertiary;
       color: #fff;
+
+      svg {
+        position: relative;
+        left: .55px;
+      }
     }
 
     .phone-info {
