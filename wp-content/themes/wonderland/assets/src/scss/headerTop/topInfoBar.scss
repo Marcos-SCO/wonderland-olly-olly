@@ -16,9 +16,9 @@
 
     margin: auto;
 
-    gap: .5rem;
+    gap: .25rem;
 
-    padding: 2rem 0.75rem;
+    padding: 1rem 0.75rem;
 
     @media (min-width: 500px) {
       padding: 1rem 5.5rem;
@@ -124,13 +124,19 @@
 
     p {
       font-weight: 700;
-      /* 14px */
-      font-size: 0.775rem;
+      font-size: .65rem;
       /* 100% */
       line-height: 1;
       /* 0.5px */
       letter-spacing: 0.03125rem;
       color: #fff;
+    }
+
+    @media (min-width: 500px) {
+      p {
+        /* 14px */
+        font-size: 0.775rem;
+      }
     }
   }
 
@@ -166,7 +172,7 @@
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
 
-      font-size: 0.775rem;
+      font-size: 0.65rem;
       line-height: 1;
       /* 0.5px */
       letter-spacing: 0.03rem;
