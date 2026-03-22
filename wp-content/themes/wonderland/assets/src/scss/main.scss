@@ -17,7 +17,7 @@ body {
 
 header {
   width: 100%;
-  max-width: 1440px;
+  // max-width: 1440px;
   margin: auto;
 
   &.site-header {
@@ -28,8 +28,12 @@ header {
 
 main {
   width: 100%;
-  max-width: 1440px;
   margin: auto;
+}
+
+.content-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .btn {

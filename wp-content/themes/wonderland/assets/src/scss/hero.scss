@@ -14,28 +14,29 @@
     background-size: cover;
     background-position: center;
 
-
     /* 752.64px */
     min-height: 47.04rem;
     /* 36px */
     gap: 2.25rem;
     /* 100px 120px */
 
-    padding: 3.25rem 1.75rem;
 
-    @media (min-width: 1000px) {
-        padding: 5rem 3.5rem;
+    .content-wrapper {
+        padding: 3.25rem 1.75rem;
+
+        @media (min-width: 1000px) {
+            padding: 5rem 3.5rem;
+        }
+
+        @media (min-width: 1200px) {
+            padding: 6.25rem 5.5rem;
+        }
+
+        @media (min-width: 1300px) {
+            background-position: center;
+            padding: 6.25rem 7.5rem;
+        }
     }
-
-    @media (min-width: 1200px) {
-        padding: 6.25rem 5.5rem;
-    }
-
-    @media (min-width: 1300px) {
-        background-position: center;
-        padding: 6.25rem 7.5rem;
-    }
-
 }
 
 .hero-wrapper {

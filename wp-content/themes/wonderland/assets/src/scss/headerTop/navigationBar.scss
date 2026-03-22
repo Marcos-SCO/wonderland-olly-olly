@@ -1,19 +1,39 @@
 @use '../colors' as *;
 
 .navigation-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
 
-    padding: 1rem 1.75rem;
+    .content-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
-    max-width: 1440px;
-    min-height: 15.9238px;
-    // gap: 18.125rem;
+        padding: 1rem 1.75rem;
 
-    background-color: #fff;
-    // background-color: red;
+        max-width: 1440px;
+        margin: auto;
+        min-height: 15.9238px;
+        // gap: 18.125rem;
+
+        background-color: #fff;
+        // background-color: red;
+
+        @media (min-width: 1000px) {
+            padding: 1rem 3.5rem;
+
+            justify-content: space-between;
+        }
+
+        @media (min-width: 1200px) {
+            padding: 1rem 5.5rem;
+        }
+
+        @media (min-width: 1400px) {
+
+            padding: 1.75rem 7.5rem;
+        }
+
+    }
 
     &.active {
         .links-container {
@@ -41,20 +61,6 @@
         }
     }
 
-    @media (min-width: 1000px) {
-        padding: 1rem 3.5rem;
-
-        justify-content: space-between;
-    }
-
-    @media (min-width: 1200px) {
-        padding: 1rem 5.5rem;
-    }
-
-    @media (min-width: 1400px) {
-
-        padding: 1.75rem 7.5rem;
-    }
 }
 
 .logo-container {
