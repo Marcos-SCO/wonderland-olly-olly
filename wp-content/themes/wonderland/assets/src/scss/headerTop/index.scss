@@ -1,2 +1,11 @@
 @use "topInfoBar";
 @use "navigationBar";
+
+header.site-header {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media (min-width: 850px) {
+        flex-direction: column;
+    }
+}

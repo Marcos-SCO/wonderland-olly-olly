@@ -1,5 +1,26 @@
 @use '../colors' as *;
 
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    span {
+        width: 25px;
+        height: 3px;
+        background: #000;
+        display: block;
+    }
+
+    @media (min-width: 1000px) {
+        display: none;
+    }
+}
+
+
 .navigation-bar {
     display: flex;
     align-items: center;
@@ -15,10 +36,25 @@
     background-color: #fff;
     // background-color: red;
 
+    &.active {
+        .links-container {
+            position: static;
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: auto;
+
+            padding: 1rem 0;
+        }
+    }
+
     @media (min-width: 1000px) {
-        padding: 1rem 5.5rem;
+        padding: 1rem 3.5rem;
 
         justify-content: space-between;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 1rem 5.5rem;
     }
 
     @media (min-width: 1400px) {
@@ -41,8 +77,18 @@
 }
 
 .links-container {
-    // width: 100%;
-    // max-width: 591px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    background: #fff;
+
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.25s ease;
 
     ul {
         display: flex;
@@ -52,11 +98,21 @@
 
         /* 56px */
         min-height: 3.5rem;
-        /* 44px */
-        gap: 2.75rem;
+
+
+        flex-direction: column;
+        gap: 1.5rem;
 
         li {
             list-style: none;
+
+            &:has(a.btn) {
+                margin: .5rem 0;
+
+                @media (min-width: 1000px) {
+                    margin: 0;
+                }
+            }
 
             a {
                 color: $textBody;
@@ -96,6 +152,20 @@
                     }
                 }
             }
+        }
+    }
+
+    @media (min-width: 1000px) {
+        position: static;
+        transform: none;
+        opacity: 1;
+        pointer-events: auto;
+        width: auto;
+
+        ul {
+            flex-direction: row;
+            /* 44px */
+            gap: 1.45rem;
         }
     }
 }

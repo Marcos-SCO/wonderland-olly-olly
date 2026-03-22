@@ -1,6 +1,5 @@
 // import '../css/main.css';
 import '../scss/main.scss';
 
-import dockerWp from '../img/docker-wp.jpeg';
+import './navigationBar';
 
-console.log('Vite + WP build works 🚀');

@@ -46,11 +46,17 @@
                 </a>
             </div>
 
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <div class="links-container">
                 <ul>
                     <li><a href="#"><?= __('About Us', 'wonderland'); ?></a></li>
                     <li><a href="#"><?= __('Our Services', 'wonderland'); ?></a></li>
-                    <li><a href="#"><?= __('Packages', 'wonderland'); ?></a></li>
+                    <li><a href="#"><?= __('Maintenance Packages', 'wonderland'); ?></a></li>
                     <li>
                         <a href="#" class="btn"><?= __('I Want a Quote', 'wonderland'); ?></a>
                     </li>
