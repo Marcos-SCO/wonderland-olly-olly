@@ -30,7 +30,7 @@
                     </div>
 
                     <div class="phone">
-                        <a href="#" class="btn phone-button">
+                        <a href="#" class="btn phone-button open-contact-modal">
                             <div class="ellipse-icon"><span class="icon"><?= $GLOBALS['svgLoader']->render('phone_icon'); ?></span></div>
 
                             <span class="phone-info"><?= __('(508) 0000-0000', 'wonderland'); ?></span>

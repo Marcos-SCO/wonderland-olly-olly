@@ -13,8 +13,8 @@
                     </div>
 
                     <div class="call-to-action">
-                        <a href="#" class="btn"><?= __('Schedule a visit', 'wonderland') ?></a>
-                        <a href="#" class="btn white"><?= __('Call Us Now!', 'wonderland') ?></a>
+                        <a href="#" class="btn open-contact-modal"><?= __('Schedule a visit', 'wonderland') ?></a>
+                        <a href="#" class="btn white open-contact-modal"><?= __('Call Us Now!', 'wonderland') ?></a>
                     </div>
 
                     <div class="review">
@@ -34,7 +34,7 @@
                                 <div class="score">4.95/5.00</div>
                             </div>
 
-                            <div class="message">
+                            <div class="message open-contact-modal">
                                 <p><?= __('Over 14.5k happy customers on', 'wonderland'); ?> <a href="#">Yelp</a></p>
                             </div>
                         </div>
