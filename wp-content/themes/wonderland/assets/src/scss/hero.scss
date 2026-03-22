@@ -1,0 +1,27 @@
+.hero {
+    width: 100%;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/wp-content/themes/wonderland/assets/dist/img/erdaExtremera.jpg');
+        
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/wp-content/themes/wonderland/assets/dist/img/erdaExtremera.webp');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    /* 752.64px */
+    min-height: 47.04rem;
+    /* 36px */
+    gap: 2.25rem;
+    /* 100px 120px */
+    padding: 6.25rem 7.5rem;
+
+    @media (min-width: 1300px) {
+       background-position: center;
+    }
+
+}
