@@ -1,9 +1,11 @@
+@use 'colors' as *;
+
 .hero {
     width: 100%;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('/wp-content/themes/wonderland/assets/dist/img/erdaExtremera.jpg');
-        
+
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('/wp-content/themes/wonderland/assets/dist/img/erdaExtremera.webp');
@@ -18,10 +20,90 @@
     /* 36px */
     gap: 2.25rem;
     /* 100px 120px */
-    padding: 6.25rem 7.5rem;
 
-    @media (min-width: 1300px) {
-       background-position: center;
+    padding: 3.25rem 1.75rem;
+
+    @media (min-width: 1000px) {
+        padding: 5rem 3.5rem;
     }
 
+    @media (min-width: 1200px) {
+        padding: 6.25rem 5.5rem;
+    }
+
+    @media (min-width: 1300px) {
+        background-position: center;
+        padding: 6.25rem 7.5rem;
+    }
+
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 673px;
+    color: #fff;
+}
+
+.consultation-announcement {
+
+    /* 673px */
+    max-width: 42.0625rem;
+    // /* 340px */
+    // min-height: 21.25rem;
+    /* 24px */
+    gap: 1.5rem;
+
+    p {
+
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+
+        font-size: 1.6rem;
+        line-height: 2rem;
+
+        letter-spacing: 0;
+
+        &.yellow-primary {
+            color: $yellowPrimary;
+
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+
+            letter-spacing: 0;
+            padding: 0.5rem 0;
+        }
+
+        @media (min-width: 500px) {
+             font-size: 2rem;
+               line-height: 3rem;
+        }
+
+        @media (min-width: 800px) {
+            /* 44px */
+            font-size: 2.75rem;
+            /* 56px */
+            line-height: 3.5rem;
+
+            &.yellow-primary {
+
+                /* 36px */
+                font-size: 2.25rem;
+                /* 44px */
+                line-height: 2.75rem;
+            }
+        }
+    }
+
+    small {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        /* 14px */
+        font-size: 0.875rem;
+        /* 24px */
+        line-height: 1.5rem;
+        /* 0.5px */
+        letter-spacing: 0.03125rem;
+    }
 }
