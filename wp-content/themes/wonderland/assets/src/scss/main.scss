@@ -24,12 +24,25 @@ header {
     // position: fixed;
   }
 
+  &.site-header {
+    
+    @media (min-width: 1440px) {
+        position: fixed;
+    }
+}
+
 }
 
 main {
   width: 100%;
   margin: auto;
+
+    @media (min-width: 1440px) {
+        padding-top: 185.59px;
+    }
 }
+
+
 
 .content-wrapper {
   max-width: 1440px;
