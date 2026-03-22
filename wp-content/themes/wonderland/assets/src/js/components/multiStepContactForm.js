@@ -131,7 +131,8 @@ function setupDialogTriggers(triggerClass, dialog) {
     }
 
     function goToStep(step) {
-        if (StepState.get() == totalSteps) return;
+        const isActiveFeedback = success.classList.contains('active');
+        if (isActiveFeedback) return;
 
         if (step <= StepState.get()) {
             StepState.set(step);
