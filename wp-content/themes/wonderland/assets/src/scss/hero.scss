@@ -46,7 +46,7 @@
     color: #fff;
 }
 
-.consultation-announcement {
+.hero .consultation-announcement {
 
     /* 673px */
     max-width: 42.0625rem;
@@ -108,7 +108,7 @@
     }
 }
 
-.call-to-action {
+.hero .call-to-action {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -149,6 +149,119 @@
         &.white {
             background-color: #fff;
             color: $greenTertiary;
+        }
+    }
+}
+
+.hero .review {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    // flex-wrap: wrap;
+
+    width: 100%;
+    /* 359.637px */
+    max-width: 22.4773rem;
+    /* 84.64px */
+    min-height: 5.29rem;
+    // max-height: 5.29rem;
+    /* 14px 20px */
+    padding: 0.875rem 1.25rem;
+    /* 24px */
+    gap: 1.5rem;
+    /* 12px */
+    border-radius: 0.75rem;
+    background-color: #fff;
+
+    color: $textBody;
+
+    .ellipse-icon {
+        /* 56.637px */
+        min-width: 3.5398rem;
+        /* 56.64px */
+        min-height: 3.54rem;
+        /* 139.6px */
+        border-radius: 8.725rem;
+
+        background-color: $greenPrimary;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        /* 239px */
+        max-width: 14.9375rem;
+        /* 55.2px */
+        min-height: 3.45rem;
+        /* 12px */
+        gap: 0.75rem;
+        opacity: 1;
+
+        font-family: "Jost", sans-serif;
+        font-weight: 400;
+
+        .grade {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            /* 10px */
+            gap: 0.625rem;
+
+            .stars {
+                display: flex;
+
+                span {
+                    cursor: pointer;
+                    display: block;
+                    width: 23px;
+                    height: 23px;
+
+                    aspect-ratio: 1;
+                    background: $yellowPrimary;
+                    clip-path: polygon(50% 0,
+                            calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+                            calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+                            calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+                            calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))));
+
+                }
+            }
+
+            .score {
+                /* 12px */
+                font-size: 0.75rem;
+                /* 22px */
+                line-height: 1.375rem;
+                /* 0.5px */
+                letter-spacing: 0.03125rem;
+            }
+        }
+
+        .message p {
+
+            /* 14px */
+            // font-size: 0.875rem;
+            font-size: 0.83rem;
+            /* 100% */
+            line-height: 1;
+            /* 4% */
+            letter-spacing: 0.04em;
+
+            gap: 2px;
+
+            a {
+                color: $textBody;
+            }
+
+            a,
+            span {
+                font-weight: 700;
+                font-size: 0.875rem;
+                letter-spacing: 0.04em;
+            }
         }
     }
 }
