@@ -9,32 +9,32 @@
         </header>
 
         <div class="step-form-item active" data-step="1">
-            <div>
-                <label for="email"><?= __('Email Address', 'wonderland'); ?></label>
+            <div class="form-group">
+                <label for="email"><?= __('Email*', 'wonderland'); ?></label>
                 <input type="email" id="email" placeholder="email@emial.com" name="email" required>
             </div>
             <small><?= __('By entering your email information, you accept to receive emails from Wonder-land.', 'wonderland'); ?></small>
         </div>
-        
+
         <div class="step-form-item" data-step="2">
-            <div>
+            <div class="form-group">
                 <label for="fullName"><?= __('First and last name', 'wonderland'); ?></label>
                 <input type="text" id="fullName" placeholder="<?= __('Your Full Name...', 'wonderland'); ?>" name="fullName" required>
             </div>
         </div>
-        
+
         <div class="step-form-item" data-step="3">
-            <div>
+            <div class="form-group">
                 <label for="phoneNumber"><?= __('Phone number*', 'wonderland'); ?></label>
                 <input type="phone" id="phoneNumber" placeholder="(000) 000 - 0000" name="phoneNumber" required>
             </div>
         </div>
 
         <div class="form-buttons">
-            <button class="btn go-back"><?= __('Go back', 'wonderland'); ?></button>
-            
-            <button class="btn"><?= __('Next', 'wonderland'); ?></button>
-            
+            <button class="btn go-back show"><?= __('Go back', 'wonderland'); ?></button>
+
+            <button class="btn show"><?= __('Next', 'wonderland'); ?></button>
+
             <button class="btn" type="submit"><?= __('Submit', 'wonderland'); ?></button>
         </div>
 
@@ -49,8 +49,11 @@
             </div>
         </div>
 
-        <div class="steps-indicator-stepper">
-            
+        <div class="indicator-stepper">
+            <span class="step completed" data-step="1"></span>
+            <span class="step completed" data-step="2"></span>
+            <span class="step active" data-step="3"></span>
+            <span class="step" data-step="4"></span>
         </div>
     </form>
 </dialog>

@@ -6,10 +6,18 @@
 
 @use "components/multiStepContactForm";
 
+@use "colors" as *;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:focus,
+:focus-visible {
+  outline: 0.125rem solid $greenPrimary;
+  outline-offset: 0.125rem;
 }
 
 body {
@@ -27,11 +35,11 @@ header {
   }
 
   &.site-header {
-    
+
     @media (min-width: 1440px) {
-        position: fixed;
+      position: fixed;
     }
-}
+  }
 
 }
 
@@ -39,9 +47,9 @@ main {
   width: 100%;
   margin: auto;
 
-    @media (min-width: 1440px) {
-        padding-top: 185.59px;
-    }
+  @media (min-width: 1440px) {
+    padding-top: 185.59px;
+  }
 }
 
 
@@ -51,7 +59,8 @@ main {
   margin: 0 auto;
 }
 
-.btn, .btn-menu-item a {
+.btn,
+.btn-menu-item a {
   cursor: pointer;
   border: none;
   width: 100%;
