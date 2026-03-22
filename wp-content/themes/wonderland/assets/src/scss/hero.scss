@@ -2,9 +2,9 @@
 
 .hero {
     width: 100%;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('/wp-content/themes/wonderland/assets/dist/img/erdaExtremera.jpg');
+    // background-image:
+    //     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    //     url('/wp-content/themes/wonderland/assets/dist/img/erdaExtremera.jpg');
 
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -76,8 +76,8 @@
         }
 
         @media (min-width: 500px) {
-             font-size: 2rem;
-               line-height: 3rem;
+            font-size: 2rem;
+            line-height: 3rem;
         }
 
         @media (min-width: 800px) {
@@ -105,5 +105,50 @@
         line-height: 1.5rem;
         /* 0.5px */
         letter-spacing: 0.03125rem;
+    }
+}
+
+.call-to-action {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* 340px */
+    // max-width: 21.25rem;
+    /* 56px */
+    min-height: 3.5rem;
+    /* 24px */
+    gap: 1.5rem;
+
+    padding: 2.2rem 0 2rem;
+
+    a.btn {
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+
+        /* 14px */
+        font-size: 0.875rem;
+        /* 24px */
+        line-height: 1.5rem;
+        /* 0.5px */
+        letter-spacing: 0.03125rem;
+
+        padding: 1rem 1.5rem;
+        /* 10px */
+        gap: 0.625rem;
+        // /* 12px */
+        border-radius: 0.75rem;
+
+        background-color: $greenPrimary;
+        color: #fff;
+
+        text-decoration: none;
+
+        max-width: max-content;
+
+        &.white {
+            background-color: #fff;
+            color: $greenTertiary;
+        }
     }
 }
