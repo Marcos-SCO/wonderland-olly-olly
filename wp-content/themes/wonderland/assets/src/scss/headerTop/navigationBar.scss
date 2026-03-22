@@ -158,26 +158,31 @@
                     text-decoration: underline;
                 }
 
-                &.btn {
-                    width: 100%;
-                    /* 165px */
-                    max-width: 10.3125rem;
-                    /* 56px */
-                    min-height: 3.5rem;
-                    /* 16px 24px */
-                    padding: 1rem 1.5rem;
-                    /* 10px */
-                    // gap: 0.625rem;
-                    // /* 12px */
-                    // border-radius: 0.75rem;
-                    background-color: $greenPrimary;
 
-                    &,
-                    &:hover {
-                        color: #fff;
-                        text-decoration: none;
-                    }
+            }
+
+
+            &.btn-menu-item a,
+            a.btn {
+                width: 100%;
+                /* 165px */
+                max-width: 10.3125rem;
+                /* 56px */
+                min-height: 3.5rem;
+                /* 16px 24px */
+                padding: 1rem 1.5rem;
+                /* 10px */
+                // gap: 0.625rem;
+                // /* 12px */
+                // border-radius: 0.75rem;
+                background-color: $greenPrimary;
+
+                &,
+                &:hover {
+                    color: #fff;
+                    text-decoration: none;
                 }
+
             }
         }
     }
