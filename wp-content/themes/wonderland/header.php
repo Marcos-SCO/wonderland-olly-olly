@@ -8,7 +8,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header>
+    <header class="site-header">
         <div class="top-info-bar">
             <div class="announcement-info">
                 <p>
@@ -37,4 +37,26 @@
                 </div>
             </address>
         </div>
+
+        <nav class="navigation-bar">
+
+            <div class="logo-container">
+                <a href="<?= get_home_url(); ?>" title="<?= get_bloginfo('name'); ?>">
+                    <?= $GLOBALS['svgLoader']->render('wonderland_logo'); ?>
+                </a>
+            </div>
+
+            <div class="links-container">
+                <ul>
+                    <li><a href="#"><?= __('About Us', 'wonderland'); ?></a></li>
+                    <li><a href="#"><?= __('Our Services', 'wonderland'); ?></a></li>
+                    <li><a href="#"><?= __('Packages', 'wonderland'); ?></a></li>
+                    <li>
+                        <a href="#" class="btn"><?= __('I Want a Quote', 'wonderland'); ?></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
     </header>
