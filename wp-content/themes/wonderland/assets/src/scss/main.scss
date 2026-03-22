@@ -43,6 +43,28 @@ header {
 
 }
 
+footer {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: $textBody;
+  padding: 1rem 0;
+  background-color: transparent;
+  border-top: 1px solid $offWhite;
+
+  a {
+    color: $greenSecondary;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $greenPrimary;
+    }
+  }
+}
+
+
 main {
   width: 100%;
   margin: auto;
