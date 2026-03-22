@@ -8,10 +8,20 @@ dialog.multi-step-contact-dialog {
 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.95);
 
     width: 100%;
     max-width: 90%;
+
+    opacity: 0;
+    transition: opacity 0.1s ease, transform 0.25s ease;
+
+    overflow-x: hidden;
+
+    &.open {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
 
     @media (min-width: 700px) {
         max-width: 720px;
@@ -105,6 +115,9 @@ dialog.multi-step-contact-dialog {
         opacity: 0;
         pointer-events: none;
 
+        transform: translateX(20px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+
         width: 100%;
         /* 540px */
         max-width: 33.75rem;
@@ -123,6 +136,7 @@ dialog.multi-step-contact-dialog {
 
             opacity: 1;
             pointer-events: auto;
+            transform: translateX(0);
         }
 
         small {
@@ -270,6 +284,16 @@ dialog.multi-step-contact-dialog {
         background-color: $offWhite;
         position: relative;
         z-index: 1;
+
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+        &.active {
+            transform: scale(1.2);
+        }
+
+        &.completed {
+            transform: scale(1);
+        }
 
         &.completed,
         &.active {

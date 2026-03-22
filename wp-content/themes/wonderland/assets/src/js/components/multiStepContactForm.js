@@ -7,6 +7,14 @@ function enableDialogCloseOutside(dialog) {
 
         if (!form.contains(event.target)) {
             dialog.close();
+            dialog.classList.remove('open');
+        }
+    });
+
+    dialog.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            dialog.close();
+            dialog.classList.remove('open');
         }
     });
 }
@@ -14,6 +22,7 @@ function enableDialogCloseOutside(dialog) {
 function openDialog(dialog) {
     if (!dialog) return;
     dialog.showModal();
+    dialog.classList.add('open');
 }
 
 function setupDialogTriggers(triggerClass, dialog) {

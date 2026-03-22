@@ -24,7 +24,7 @@
 
                         <div class="info">
                             <div class="grade">
-                                <div class="stars" title="Nemesis would say: STAAAAHRS...">
+                                <div class="stars open-contact-modal" title="Nemesis would say: STAAAAHRS...">
                                     <span></span>
                                     <span></span>
                                     <span></span>
