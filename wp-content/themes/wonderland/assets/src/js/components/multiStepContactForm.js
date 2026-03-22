@@ -1,7 +1,34 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const dialog = document.querySelector('[data-js="multi-step-contact"]')
-    if (dialog) dialog.showModal()
-});
+function enableDialogCloseOutside(dialog) {
+    if (!dialog) return;
+
+    dialog.addEventListener('click', (event) => {
+        const form = dialog.querySelector('form');
+        if (!form) return;
+
+        if (!form.contains(event.target)) {
+            dialog.close();
+        }
+    });
+}
+
+function openDialog(dialog) {
+    if (!dialog) return;
+    dialog.showModal();
+}
+
+function setupDialogTriggers(triggerClass, dialog) {
+    if (!dialog) return;
+
+    const triggers = document.querySelectorAll(`${triggerClass}`);
+    if (!triggers.length) return;
+
+    triggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            openDialog(dialog);
+        });
+    });
+}
 
 (function () {
     const form = document.querySelector('[data-js="multi-step-contact"]');
@@ -139,3 +166,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateUI();
 })();
+
+function ContactFormStepDialogTriggers() {
+    const dialog = document.querySelector('[data-js="multi-step-contact"]');
+    if (!dialog) return;
+    
+    enableDialogCloseOutside(dialog);
+    setupDialogTriggers('.open-contact-modal', dialog);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    ContactFormStepDialogTriggers();
+});
