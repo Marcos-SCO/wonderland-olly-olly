@@ -6,3 +6,4 @@ import '../img/erdaExtremera.jpg';
 import '../img/erdaExtremera.webp';
 
 import './navigationBar';
+import './components';

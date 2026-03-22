@@ -43,6 +43,11 @@
                 </div>
             </div>
         </section>
+
+        <?php // Multi-step contact form component
+        get_template_part('components/multiStepContactForm');
+
+        ?>
     </article>
 </main>
 

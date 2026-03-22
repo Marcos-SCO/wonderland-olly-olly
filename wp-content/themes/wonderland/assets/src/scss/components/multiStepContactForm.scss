@@ -1,0 +1,15 @@
+.multi-step-contact-form {
+    .step-form-item {
+
+        opacity: 0;
+        pointer-events: none;
+
+        &.active {
+
+            position: static;
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+}
