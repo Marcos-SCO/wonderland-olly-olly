@@ -50,12 +50,3 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.SERVER_DIR }}
           local-dir: wp-content/themes/wonderland/
-          exclude: |
-            **/.git*
-            node_modules
-            node_modules/**
-            **/node_modules/**
-            assets/src/**
-            scss/**
-            vite.config.js
-            package*.json
