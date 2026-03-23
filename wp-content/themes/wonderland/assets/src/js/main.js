@@ -1,6 +1,9 @@
-import '../css/main.css';
+// import '../css/main.css';
 import '../scss/main.scss';
 
-import dockerWp from '../img/docker-wp.jpeg';
+// Image imports
+import '../img/erdaExtremera.jpg';
+import '../img/erdaExtremera.webp';
 
-console.log('Vite + WP build works 🚀');
+import './navigationBar';
+import './components';

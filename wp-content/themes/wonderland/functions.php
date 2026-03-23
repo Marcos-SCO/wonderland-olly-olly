@@ -17,3 +17,10 @@ include_once('vendor/autoload.php');
 include_once('functions/index.php');
 
 
+function wonderland_register_menus()
+{
+    register_nav_menus([
+        'primary' => __('Navigation Menu', 'wonderland'),
+    ]);
+}
+add_action('after_setup_theme', 'wonderland_register_menus');

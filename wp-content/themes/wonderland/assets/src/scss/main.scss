@@ -1,4 +1,124 @@
+@use "fonts";
+@use "flex";
+
+@use "headerTop";
+@use "hero";
+
+@use "components/multiStepContactForm";
+
+@use "colors" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:focus,
+:focus-visible {
+  outline: 0.125rem solid $greenPrimary;
+  outline-offset: 0.125rem;
+}
+
 body {
-  background-color: green;
-  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  // max-width: 1440px;
+  margin: auto;
+
+  &.site-header {
+    // position: fixed;
+  }
+
+  &.site-header {
+
+    @media (min-width: 1440px) {
+      position: fixed;
+    }
+  }
+
+}
+
+footer {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: $textBody;
+  padding: 1rem 0;
+  background-color: transparent;
+  border-top: 1px solid $offWhite;
+
+  a {
+    color: $greenSecondary;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $greenPrimary;
+    }
+  }
+}
+
+
+main {
+  width: 100%;
+  margin: auto;
+
+  @media (min-width: 1440px) {
+    padding-top: 185.59px;
+  }
+}
+
+
+
+.content-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.btn,
+.btn-menu-item a {
+  cursor: pointer;
+  border: none;
+  width: 100%;
+
+  /* 12px */
+  gap: 0.75rem;
+  /* 12px */
+  border-radius: 0.75rem;
+  /* 6px */
+  padding: 0.375rem;
+
+  &:hover {
+    opacity: 0.95;
+  }
+}
+
+.ellipse-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* 30px */
+  width: 1.875rem;
+  /* 30px */
+  height: 1.875rem;
+
+  min-height: 30px;
+  max-height: 30px;
+  min-width: 30px;
+  max-width: 30px;
+  border-radius: 50%;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
 }
