@@ -32,7 +32,7 @@
             </div>
         
             <div class="form-buttons">
-                <button class="btn go-back show"><?= __('Go back', 'wonderland'); ?></button>
+                <button class="btn go-back"><?= __('Go back', 'wonderland'); ?></button>
         
                 <button class="btn show"><?= __('Next', 'wonderland'); ?></button>
         
@@ -51,9 +51,9 @@
             </div>
         
             <div class="indicator-stepper">
-                <span class="step completed" data-step="1"></span>
-                <span class="step completed" data-step="2"></span>
-                <span class="step active" data-step="3"></span>
+                <span class="step active" data-step="1"></span>
+                <span class="step" data-step="2"></span>
+                <span class="step" data-step="3"></span>
                 <span class="step" data-step="4"></span>
             </div>
         </form>
