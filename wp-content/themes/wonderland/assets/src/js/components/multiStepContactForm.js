@@ -39,7 +39,7 @@ function setupDialogTriggers(triggerClass, dialog) {
     });
 }
 
-(function () {
+function initMultiStepForm() {
     const form = document.querySelector('[data-js="multi-step-contact"]');
     if (!form) return;
 
@@ -175,7 +175,7 @@ function setupDialogTriggers(triggerClass, dialog) {
     });
 
     updateUI();
-})();
+}
 
 function ContactFormStepDialogTriggers() {
     const dialog = document.querySelector('[data-js="multi-step-contact"]');
@@ -183,6 +183,8 @@ function ContactFormStepDialogTriggers() {
     
     enableDialogCloseOutside(dialog);
     setupDialogTriggers('.open-contact-modal', dialog);
+
+    initMultiStepForm();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
