@@ -52,8 +52,10 @@ jobs:
           local-dir: wp-content/themes/wonderland/
           exclude: |
             **/.git*
+            node_modules
+            node_modules/**
             **/node_modules/**
-            **/assets/src/**
-            **/scss/**
-            **/vite.config.js
-            **/package*.json
+            assets/src/**
+            scss/**
+            vite.config.js
+            package*.json
