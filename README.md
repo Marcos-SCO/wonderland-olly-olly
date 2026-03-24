@@ -9,7 +9,7 @@ This project focuses on creating a custom frontend implementation based on a Fig
 ## 🔗 Preview & Design
 
 * 🎨 **Figma Design**: [View Design](https://www.figma.com/design/eLGUwK0QU35Bf0EM5XKZyn/Landing-Page-Hero?node-id=0-1&t=BTyVvfQSh5d1rrQB-1)
-* 🌐 **Live Preview**: [Visit Website](https://www.ollyollywonderland.infinityfreeapp.com/)
+* 🌐 **Live Preview**: [Visit Website](https://ollyollywonderland.infinityfreeapp.com/)
 
 ---
 
